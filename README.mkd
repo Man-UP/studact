@@ -1,0 +1,43 @@
+studact
+=======
+
+*studact* automatically updates the studact main page with the latest news from
+each of the student lead activities.
+
+Setup
+-----
+
+**studact only works within the CS network**. Setup studact on a CS machine.
+
+Setup requires:
+    - expect
+    - python2.7 (or compatible)
+    - svn
+
+Note: If python2.7 is not available, you'll have to install it in your home
+directory. For further information e-mail peter.sutton@cs.man.ac.uk
+
+Run;
+
+    $ ./setup.sh [studact user name] [studact password]
+
+Note: The login may fail because of the configuration of your terminal. If this
+happens, login manually with;
+
+    $ cd pywikipedia
+    $ python2.7 login.py
+
+Note: If you care enough, you may want to remove your password from
+~/.bash\_histroy.
+
+Running
+-------
+
+From any directroy execute the run.sh script. E.g,;
+
+    $ ./run.sh [info paths]
+
+You may store all the info paths in a file and pass them to run.sh like this;
+
+    $ ./run.sh @[info paths file name]
+
